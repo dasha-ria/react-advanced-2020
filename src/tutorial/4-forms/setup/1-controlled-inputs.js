@@ -18,6 +18,8 @@ const ControlledInputs = () => {
       setPeople((people) => {
         return [...people, person];
       });
+      setFirstName("");
+      setEmail("");
     } else {
       console.log("hello");
     }
