@@ -22,7 +22,7 @@ const reducer = (state, action) => {
 const defaultState = {
   people: [],
   isModalOpen: false,
-  modalContent: "hello world",
+  modalContent: "",
 };
 
 const Index = () => {
@@ -53,7 +53,6 @@ const Index = () => {
         </div>
         <button type="submit">add</button>
       </form>
-
       {state.people.map((person) => {
         return (
           <div key={person.id}>
