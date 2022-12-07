@@ -20,8 +20,9 @@ const ContextAPI = () => {
   );
 };
 
-const List = ({ people }) => 
-const mainData = useContext(PersonContext);{
+const List = ({ people }) => {
+  const mainData = useContext(PersonContext);
+
   return (
     <>
       {mainData.people.map((person) => {
